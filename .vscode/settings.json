@@ -1,0 +1,36 @@
+{
+    "editor.fontFamily": "'vsfont', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    
+                    "entity.name.type.class", //class names
+                    "entity.other.attribute-name", //HTML Attributes
+                    
+                ],
+                "settings": {
+                    "foreground": "#ffc549",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    //following will be excluded from italics (VSCode has some defaults for italics)
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "editor.fontSize": 14
+}

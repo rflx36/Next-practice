@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { GreetComponent } from "./components/greet";
+import { CounterComponent } from "./components/counter";
 
 export default function Home() {
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -12,6 +15,8 @@ export default function Home() {
           height={38}
           priority
         />
+        <GreetComponent />
+        <CounterComponent />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
@@ -20,7 +25,7 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li className="bg-red-500/25 rounded-md px-2 py-1 border border-red-500">HenLOOOO</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -92,6 +97,7 @@ export default function Home() {
             alt="Globe icon"
             width={16}
             height={16}
+
           />
           Go to nextjs.org →
         </a>
